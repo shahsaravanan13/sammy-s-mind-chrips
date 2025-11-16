@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy's MindChirps</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            background-image: url(back.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            scroll-behavior: smooth;
+        }
+        .header-bg {
+            background-color: #025159; 
+            color: white;
+        }
+        .blog-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-title-bg {
+            background-color: #025159;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="header-bg py-4">
+        <div class="container mx-auto px-4 flex items-center">
+            <img src="1598179803.PNG" width="100" height="150" alt="Logo" class="mr-2"> 
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 grid md:grid-cols-12 gap-6">
+
+         <section class="md:col-span-9">
+            <div id="blog-posts" class="w-full max-w-3xl space-y-6"></div>
+        </section>
+        
+        <aside class="md:col-span-3">
+            <div class="max-w-xs mx-auto">
+            
+             <div class="bg-white rounded-lg shadow-md mb-6">
+                <div class="blog-title-bg text-xl font-bold">Newsletter</div>
+                <div class="p-4">
+                    <form>
+                        <input type="email" placeholder="Email Address" class="w-full p-2 border rounded mb-2">
+                        <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+             <div class="bg-white rounded-lg shadow-md">
+                <div class="blog-title-bg text-xl font-bold">About Sammy's MindChirps</div>
+                <div class="p-4">
+                    <p class="text-gray-600">
+                        Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an acronym of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope offering amazing learning opportunities as we grow and explore various facets of life. So this blog is a platform where I share anything that I find interesting (with my two cents, of course :D). I assure that you will have some new learning when you exit the blog. And do share your feedback on the blog or anything you want me to write about in this blog by dropping an email to mindchirps@gmail.com
+                    </p>
+                </div>
+            </div>
+            </div>
+        </aside>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-4">
+        <div style="text-align: center; font-size: 24px; margin-bottom: 10px;">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google"></i>
+        </div>
+        <p style="text-align: center; font-size: 20px; color: white; font-weight: bold;">&copy; 2025 Sammy's MindChirps. All rights reserved.</p>
+        <p style="text-align: center; font-size: 16px; color: white;">Logo credits:T.A SANJAY KUMAR</p>
+        <p style="text-align: center; font-size: 16px; color: white;">Developed and Hosted by 8Queens</p>
+    </footer>
+
+    <script>
+        const blogPosts = [
+            {
+                title: "Book Review of Hooked by Nir Eyal",
+                excerpt: "Why do we keep coming back to the same apps, even without a notification? Nir Eyal’s Hooked offers a compelling framework for understanding the hidden psychology behind habit-forming products — and what it means for designers, marketers, and users alike.",
+                image: "https://images.penguinrandomhouse.com/cover/9781591847786",
+                link: "blog/hooked-by-nir-eyal.html"
+            },
+            {
+                title: "Book review of Think Faster Talk Smarter By Matt Abrahams",
+                excerpt: "Think Faster Talk Smarter is a book written by Matt Abrahams, an expert in communication and a Stanford University professor, who teaches organizational behaviour. Communication is the lifeline of any relationship- be it personal or professional. Interestingly, while our educational system prepares us for communication in a formal setting - such as delivering a presentation, writing clear emails, rehearsed conversations etc., it doesn’t coach us for speaking in an informal setting...",
+                image: "2.png",
+                link: "blog/think-faster-talk-smarter-by-matt-abrahams.html"
+            },
+            {
+                title: "Review of the movie Lover directed by Prabhuram Vyas",
+                excerpt: "Love is an emotion that has always intrigued me. It is loaded with lot of contrarian feelings- you need the person you love to be possessive about you yet need your space; you need that person to respect your thoughts and let you do things on your course yet you want that person to offer their unsolicited views, and I could go on and on about how this universal feeling called \"LOVE\" is so unfathomable. Perhaps, this is why, no matter how many movies are done around the central theme of love, new ones with fresh perspective like \"Lover\" still is celebrated by the audience.",
+                image: "3.png",
+                link: "blog/review-of-the-movie-lover-directed-by-prabhuram-vyas.html"
+            },
+            {
+                title: "Review of the Tamil movie Por Thozhil directed by Vignesh Raja",
+                excerpt: "Vignesh Raja's debut movie Por Thozhil revolves around the story where 2 cops are on a mission to hunt down a serial killer. This is a stereotypical theme, which Kollywood audience are used to from the days of Sigappu Rojakkal but the director has navigated through the plot with rich twists and tight screenplay, maintaining the suspense all through the movie.",
+                image: "4.png",
+                link: "blog/review-of-the-tamil-movie-por-thozhil-directed-by-vignesh-raja.html"
+            },
+            {
+                title: "Review of movie Archana 31 Not Out by Akhil Anil Kumar",
+                excerpt: "'Woman+ Unmarried+ Approaching one's 30s' is a perfect combination that would invite unabated sympathies and advise from one's friends(married) and family. Archana 31 Not Out portrays the life of one such woman, Archana(played by Aishwarya Lekshmi), who struggles to find the right groom for her. And when she eventually thinks she has found one, a twist awaits her.",
+                image: "5.png",
+                link: "blog/review-of-movie-archana-31-not-out-by-akhil-anil-kumar.html"
+            },
+            {
+                title: "Review of the book Sailing through a storm- Making crisis work for you written by T N Hari and Sanjay Swami",
+                excerpt: "None likes facing crisis in life but we all know that it is inevitable though it's form and severity may vary. Some crisis could impact self while some like Covid 19 could impact people at large. Darwin's theory of evolution talks about survival of the fittest, which emphasizes on the adaptablity to the adverse situations as a quintessential quality to live to see another day. This theory is very much and all the more relevant in present scenario given the VUCA (volatile, uncertain, complex and ambiguous) nature of the world. But what are the essential qualities, you may wonder. Thanks to the authors T N Hari and Sanjay Swami...",
+                image: "6.png",
+                link: "blog/review-of-the-book-sailing-through-a-storm-making-crisis-work-for-you-written-by-t-n-hari-and-sanjay-swami.html"
+            },
+            {
+                title: "Gautam Vasudev Menon and Relationships- An analysis of Vinnaithandi Varuvaya",
+                excerpt: "Take any relationship- be it between a parent and one's kids, that with one's friends, or colleagues etc., Any contact between two humans has got lot of intricacies and nuances. But nothing can beat the complexity more than a relationship that blossoms between a man and a woman who intends to share their life with each other. When it comes to movies, primarily to Tamil cinema, I would say Gautham Vasudev Menon(GVM) is one of those rarest directors who has wielded these emotions wonderfully and has approached the relationship 'Love' in a multi-dimensional way. I recently watched Vinnaithandi Varuvaaya(VTV) in theater, which was re-released after its original release in 2010 and watching that movie is the trigger point for this post. If one analyses the movies he has directed starting from his debut, which is Minnale, one can observe that Love in his movies are never abusive. The Love may fall apart but the lovers would still wish each other the best, though they may reel from despair, which makes me respect GVM. You may wonder as to what is so different about this approach as this quality is just an exhibition of inner goodness that all humans are expected to possess by default.",
+                image: "7.png",
+                link: "blog/gautam-vasudev-menon-and-relationships-an-analysis-of-vinnaithandi-varuvaya.html"
+            },
+            {
+                title: "Review of the Tamil movie Nitham Oru Vanam by Ra Karthik",
+                excerpt: "The movie's storyline is very straight forward: How travel can change one's outlook about life. Of late, in Kollywood cinema, this pattern can be seen where there is a depressed person(men, mostly) who would climb on their Royal Enfield bike and then set off to the Himalayan mountains; when they return, they become a refined soul. So, is this movie any different from the stereotypical portrayal?!",
+                image: "8.png",
+                link: "blog/review-of-the-tamil-movie-nitham-oru-vanam-by-ra-karthik.html"
+            }
+        ];
+        function displayBlogPosts(posts) {
+            const blogSection = document.getElementById('blog-posts');
+            blogSection.innerHTML = '';
+            posts.forEach(post => {
+                const postElement = document.createElement('div');
+                postElement.className = 'blog-card';
+                postElement.innerHTML = `
+                    <div class="blog-title-bg text-lg font-semibold">${post.title}</div>
+                    <div class="flex p-4">
+                        <img src="${post.image}" alt="${post.title}" class="w-24 h-36 object-cover mr-4">
+                        <div>
+                            <p class="text-gray-600 mb-2">${post.excerpt}</p>
+                            <a href="${post.link}" class="text-blue-500 hover:underline">[Continue Reading...]</a>
+                        </div>
+                    </div>
+                `;
+                blogSection.appendChild(postElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            displayBlogPosts(blogPosts);
+        });
+    </script>
+</body>
+</html>
